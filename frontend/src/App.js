@@ -33,14 +33,12 @@ class App extends Component{
   render() {
     return (
       <div className="App">
-        <Header>
+        <Header />
           <ChatHistory chatHistory={this.state.chatHistory} />
           <button onClick={this.send}>Send</button>
-        </Header>
       </div>
     );
   }
-   
 }
 
 export default App;
